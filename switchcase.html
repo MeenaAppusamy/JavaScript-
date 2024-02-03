@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="color"></p>
+    <script>
+    function getColor(day) {
+        let color;
+
+switch (day) {
+    case 'monday':
+        color = 'Blue';
+        break;
+    case 'tuesday':
+        color = 'Red';
+        break;
+    case 'wednesday':
+        color = 'Green';
+        break;
+    case 'thursday':
+        color = 'Yellow';
+        break;
+    case 'friday':
+        color = 'Black';
+        break;
+    case 'saturday':
+        color = 'White';
+        break;
+    case 'sunday':
+        color = 'Purple';
+        break;
+    default:
+        color = 'Invalid day';
+        break;
+}
+ let result = document.getElementById('color');
+ result.innerHTML = day + " is "+color + " "+"Shirt";
+
+return `${day}, the shirt color is ${color}.`;
+}
+
+console.log(getColor('monday'));
+
+</script>
+</body>
+</html>

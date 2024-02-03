@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input Validation with Switch Case</title>
+</head>
+<body>
+
+  <script>
+    
+    var userInput = prompt('Enter days');
+
+     if (userInput !== null) {
+      switch(userInput.toUpperCase()) {
+        case 'SUN':
+          alert('Today is Sunday');
+          break;
+        case 'MON':
+          alert('Today is Monday');
+          break;
+        case 'TUE':
+          alert('Today is Tuesday');
+          break;
+          case 'WED':
+          alert('Today is Wednesday');
+          break;
+          case 'THUR':
+          alert('Today is Thursday');
+          break;
+          case 'FRI':
+          alert('Today is Friday');
+          break;
+        default:
+          alert('Enter any day');
+      }
+    } else {
+      alert('You canceled the prompt.');
+    }
+  </script>
+
+</body>
+</html>

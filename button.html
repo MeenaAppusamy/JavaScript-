@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <form action="">
+        <label>Firstnumber</label>
+        <input type="text" id="first-num">
+        <label>Secondnumber</label>
+        <input type="text" id="second-num">
+        <p id="calc"></p>
+       <input type="button" value="Result" onclick="getResult()">
+        </form>
+        
+
+        <script>
+            function getResult(){
+            let Firstnum = parseInt(document.getElementById("first-num").value);
+            let Secondnum =parseInt(document.getElementById("second-num").value);
+
+            let c = document.getElementById("calc")
+            let sum = Firstnum + Secondnum;
+            let sub = Firstnum - Secondnum;
+            let mul = Firstnum * Secondnum;
+            let div = Firstnum / Secondnum
+
+            c.innerHTML = "result is <br>"+sum +"<br>"+sub+"<br>"+mul+" <br>"+div;
+           
+            }
+        </script>
+
+  
+</body>
+</html>

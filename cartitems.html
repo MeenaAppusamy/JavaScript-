@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Add to Cart</h1>
+    <input type="text" id="text" placeholder="type the items">
+    <button id="btn" onclick="add()">Add</button>
+    <h2>My cart Items</h2>
+    <ul id="itemlist">
+       
+    </ul>
+
+    <script>
+        function add(){
+            var number = document.getElementById("text").value;
+            var cartItems = document.getElementById('itemlist');
+            var li = document.createElement('li');
+            li.textContent = number;
+            cartItems.appendChild(li);
+    
+        }
+
+    </script>
+</body>
+</html>
